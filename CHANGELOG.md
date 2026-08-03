@@ -12,10 +12,9 @@
 
 ## Version 0.1.1
 
-### Added
-- No initial empty set
-- Notifies the user if final set is empty
-- Removes Duplicates
-
 ### Fixed
-- Prevent user from deleting empty set
+- Prevented deletion from an empty task list.
+- Improved handling of empty task lists.
+
+### Improved
+- Duplicate tasks are no longer allowed.
