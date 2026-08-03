@@ -20,6 +20,17 @@ while len(task_set) < MAX_TASKS:
 if len(task_set) == MAX_TASKS:
     print("You have reached the maximum number of tasks (10). No more tasks can be added.")
 
+# Prevent the user from creating an empty task list
+if len(task_set) == 0:
+    print("No tasks were added. Exiting the program.")
+    exit()
+
+#Prevent the user from adding duplicate tasks
+if len(task_set) != len(set(task_set)):
+    print("Duplicate tasks detected. Please ensure all tasks are unique.")
+    exit()
+
+
 # Display final numbered list of tasks
 print("\nFinal list of tasks:")
 for idx, task in enumerate(task_set, start=1):
@@ -68,6 +79,8 @@ while True:
                 task_to_remove = list(task_set)[completed_task_index]
                 task_set.remove(task_to_remove)
                 print(f"Task '{task_to_remove}' deleted.")
+            elif len(task_set) == 0:
+                print("The task list is empty. No tasks to delete.")
             else:
                 print("Invalid task number. Please enter a valid number.")
         except ValueError:
@@ -81,6 +94,10 @@ while True:
 print("\nFinal list of tasks before exiting:") 
 for idx, task in enumerate(task_set, start=1):
     print(f"{idx}. {task}")
+
+# Inform the user if the list is empty 
+if len(task_set) == 0:
+    print("The task list is empty.")
 
 # Wait for the user to press Enter before exiting
 print("\nPress Enter to exit.")
