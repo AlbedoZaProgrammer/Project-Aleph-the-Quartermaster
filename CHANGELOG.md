@@ -18,3 +18,10 @@
 
 ### Improved
 - Duplicate tasks are no longer allowed.
+
+## Version 0.1.2
+
+### Improved
+- Cleaned up the code
+- Changed task count from set to list
+- Removed dead code

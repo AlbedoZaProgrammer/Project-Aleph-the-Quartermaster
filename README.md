@@ -15,7 +15,7 @@ The current version is intentionally minimal and serves as the foundation for fu
 
 ## Current Version
 
-v0.1.1
+v0.1.2
 
 ---
 
