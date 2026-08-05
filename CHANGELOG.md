@@ -25,3 +25,12 @@
 - Cleaned up the code
 - Changed task count from set to list
 - Removed dead code
+
+## Version 0.2.0
+
+### Added
+- Save function
+- load (Recall) Function
+
+### Improved
+- Raised the task limit to 50
